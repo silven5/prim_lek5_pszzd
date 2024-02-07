@@ -1,0 +1,54 @@
+<header class="flex">
+  <h2>Ієрархія класів</h2>
+</header>
+<article>
+  <section class="flex">
+    <label>
+      Сторона фігури
+      <input type="number" min="1" value="5" #a />
+    </label>
+    <label>
+      Висота фігури
+      <input type="number" min="1" value="5" #b />
+    </label>
+    <button (click)="ras(a.value, b.value)" class="custom-btn btn-2">
+      Розрахунок
+    </button>
+  </section>
+  <section class="flex flex-row flex-wrap" *ngIf="visible">
+    <div class="flex">
+      <h2>Трикутники</h2>
+      <div class="flex flex-row flex-wrap">
+        <div class="card">
+          <h3>Трикутник</h3>
+          <h4>Площа</h4>
+          <p>{{ tr.S }}</p>
+        </div>
+        <div class="card">
+          <h3>Прямокутний Трикутник</h3>
+          <h4>Площа</h4>
+          <p>{{ r_tr.S }}</p>
+          <h4>Гіпотенуза</h4>
+          {{ r_tr.C }}
+        </div>
+      </div>
+    </div>
+    <div class="flex">
+      <h2>Прямокутники</h2>
+      <div class="flex flex-row flex-wrap">
+        <div class="card">
+          <h3>Паралелограм</h3>
+          <h4>Площа</h4>
+          <p>{{ par.S }}</p>
+        </div>
+        <div class="card">
+          <h3>Квадрат</h3>
+          <h4>Площа</h4>
+          <p>{{ sq.S }}</p>
+          <h4>Періметр</h4>
+          {{ sq.P }}
+        </div>
+      </div>
+    </div>
+  </section>
+</article>

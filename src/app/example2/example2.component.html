@@ -1,0 +1,36 @@
+<header class="flex">
+  <h2>Поліморфний контейнер</h2>
+
+  <section class="flex">
+    <div class="content">
+      <h2>Завдання</h2>
+      <p>
+        Скласти програму з абстрактним батьківським класом і двома об'єктами -
+        нащадками. Реалізувати циклічне виведення параметрів об'єктів,
+        використовуючи поліморфний контейнер - масив об'єктів базового класу
+        (кількість об'єктів> = 5). Завдання. Знайти об'єкт з максимальною
+        площею.
+      </p>
+    </div>
+  </section>
+</header>
+<article>
+  <section class="flex">
+    <label>
+      Кількість фігур
+      <input type="number" min="1" value="5" #n />
+    </label>
+    <button (click)="ras(n.value)" class="custom-btn btn-2">Розрахунок</button>
+    <div class="flex flex-row flex-wrap">
+      <div
+        *ngFor="let fig of figure"
+        class="flex flex-row flex-wrap box"
+        [ngStyle]="{ background: getColor(fig.pl, max) }"
+      >
+        <p>
+          {{ fig.show() }}
+        </p>
+      </div>
+    </div>
+  </section>
+</article>
