@@ -1,0 +1,51 @@
+<header class="flex">
+  <h2>Інтерфейси</h2>
+</header>
+<article>
+  <section class="flex">
+    <h3>Типізація TS. Приклад</h3>
+    <button (click)="ras_type()" class="custom-btn btn-2">Розрахунок</button>
+  </section>
+  <section class="flex">
+    <h3>Інтерфейси та функції</h3>
+    <div class="content">
+      <h2>Завдання</h2>
+      <p>
+        Напишемо функції для арифметичної та геометричної прогресії, які будуть
+        оголошені через інтерфейс ISeries
+      </p>
+    </div>
+    <section class="flex">
+      <label>
+        a0
+        <input type="number" min="1" value="1" #a0 />
+      </label>
+      <label>
+        Крок
+        <input type="number" min="1" value="5" #h />
+      </label>
+      <label>
+        N=
+        <input type="number" min="1" value="2" #n />
+      </label>
+      <button
+        (click)="ras_function(a0.value, h.value, n.value)"
+        class="custom-btn btn-2"
+      >
+        Розрахунок
+      </button>
+    </section>
+  </section>
+  <section class="flex">
+    <h3>Інтерфейси та класи</h3>
+    <button (click)="ras()" class="custom-btn btn-2">Розрахунок</button>
+  </section>
+  <section class="flex">
+    <h3>Інтерфейси та масиви</h3>
+    <button (click)="ras_array()" class="custom-btn btn-2">Розрахунок</button>
+  </section>
+  <section class="flex">
+    <h3>Гибридні інтерфейси</h3>
+    <button (click)="ras_gibrid()" class="custom-btn btn-2">Розрахунок</button>
+  </section>
+</article>

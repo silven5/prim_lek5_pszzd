@@ -32,8 +32,8 @@ export class Example2Component {
       if (isNaN(n)) {
         throw new Error('Parameter is not a number!');
       }
-      if (n < 0) {
-        throw new Error('Parameter n<0!');
+      if (n <= 0) {
+        throw new Error('Parameter n<=0!');
       }
       //у циклі
       for (let i = 0; i < n; i++) {

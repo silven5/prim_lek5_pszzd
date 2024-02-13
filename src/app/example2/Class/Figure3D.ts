@@ -1,6 +1,7 @@
 export abstract class Figure3D {
   naz: string = '';
   h: number = 1;
+  //Площа
   pl: number = 0;
   parameter: number = 0;
   constructor() {}
