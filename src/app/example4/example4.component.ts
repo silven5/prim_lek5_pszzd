@@ -6,7 +6,7 @@ import { Cat } from './Class/Cat';
 import { Dog } from './Class/Dog';
 import { Show_alert } from './Class/Show_alert';
 import { Show_console } from './Class/Show_console';
-
+import { Hameleon } from './Class/Hameleon';
 @Component({
   selector: 'app-example4',
   standalone: true,
@@ -52,5 +52,14 @@ export class Example4Component {
     );
     snake.speak();
     snake.polz();
+    let ham = new Hameleon(
+      'Хамелеон',
+      'Дорі',
+      'Зелений',
+      new Date(2017, 2, 2),
+      show_alert
+    );
+    ham.run();
+    ham.laz();
   }
 }

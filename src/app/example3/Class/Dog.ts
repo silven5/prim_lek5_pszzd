@@ -15,7 +15,7 @@ export class Dog implements IPet {
     console.log('Гав-гав');
   }
   run() {
-    console.log(' Я собака та Бігу зі швидкістю 10 км/ч');
+    console.log(' Я собака та Бігу зі швидкістю 10 км/г');
   }
   // геттер для розрахунку віку
   get age() {
